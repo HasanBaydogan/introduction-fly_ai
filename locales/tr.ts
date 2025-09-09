@@ -39,7 +39,7 @@ export const tr = {
     heading: 'Ana Özellikler',
     items: [
       { title: 'Tüm operasyon tek yerde', icon: '/folded-map.svg', description: 'RFQ → PI → Ödeme → Transit → Gümrük → Teslimat akışını tek ekranda yönetin.' },
-      { title: 'Şeffaf ilerleme', icon: '/meter.svg', description: 'Durum sekmeleri ve rozetlerle görsel akış takibi; herkes aynı sayfada.' },
+      { title: 'Şeffaf ilerleme', icon: '/manage.svg', description: 'Durum sekmeleri ve rozetlerle görsel akış takibi; herkes aynı sayfada.' },
       { title: 'Daha hızlı koordinasyon', icon: '/user.svg', description: 'Dahili Destek Merkezi ile sohbet tabanlı yazışma ve dosya paylaşımı.' },
       { title: 'Finansal uyum', icon: '/calendar.svg', description: 'Çoklu para birimi ve banka bilgileriyle PI düzenleme ve ödeme takibi.' },
       { title: 'Risk azaltma', icon: '/star.svg', description: 'İptal/iade için ayrı aşamalar ve onay mekanikleri ile güvenli süreç.' },
@@ -47,7 +47,7 @@ export const tr = {
     ],
   },
   guide: {
-    heading: 'RFQ → PI → Payment → Transit → Customs → Delivery',
+    heading: 'Tekliften Teslimata',
     sub: 'Aşama rozetleri ve sekmeler ile görsel ilerleme. Özel ve gümrük/delivery aşamaları dahil uçtan uca takip. Örnek statüler: Trade Confirmation, Payment, Delivery to Transit, Custom Stages, Delivery to Client, Cancellation & Refund.',
     kicker: 'Uçtan uca akış',
     current: 'Güncel Aşama',

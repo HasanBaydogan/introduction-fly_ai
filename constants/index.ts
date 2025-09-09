@@ -26,7 +26,7 @@ export const FEATURES = [
   },
   {
     title: 'Şeffaf ilerleme',
-    icon: '/meter.svg',
+    icon: '/manage.svg',
     variant: 'green',
     description:
       'Durum sekmeleri ve rozetlerle görsel akış takibi; herkes aynı sayfada.',

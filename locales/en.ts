@@ -39,7 +39,7 @@ export const en = {
     heading: 'Key Features',
     items: [
       { title: 'All operations in one place', icon: '/folded-map.svg', description: 'Manage RFQ → PI → Payment → Transit → Customs → Delivery on a single screen.' },
-      { title: 'Transparent progress', icon: '/meter.svg', description: 'Visual flow tracking with status tabs and badges; everyone stays aligned.' },
+      { title: 'Transparent progress', icon: '/manage.svg', description: 'Visual flow tracking with status tabs and badges; everyone stays aligned.' },
       { title: 'Faster coordination', icon: '/user.svg', description: 'Chat-based Support Center for messaging and file sharing.' },
       { title: 'Financial compliance', icon: '/calendar.svg', description: 'PI editing with multi-currency and bank details; payment tracking.' },
       { title: 'Risk reduction', icon: '/star.svg', description: 'Dedicated cancellation/refund stages with approval mechanisms.' },
@@ -47,7 +47,7 @@ export const en = {
     ],
   },
   guide: {
-    heading: 'RFQ → PI → Payment → Transit → Customs → Delivery',
+    heading: 'Offer to Delivery',
     sub: 'Visual progress with badges and tabs. End-to-end tracking including custom and customs/delivery stages. Example statuses: Trade Confirmation, Payment, Delivery to Transit, Custom Stages, Delivery to Client, Cancellation & Refund.',
     kicker: 'End-to-end flow',
     current: 'Current Stage',
