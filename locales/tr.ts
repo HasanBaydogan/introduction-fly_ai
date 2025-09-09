@@ -6,6 +6,9 @@ export const tr = {
     faq: 'SSS',
     contact: 'İletişim',
     demo: 'Demo Talep Et',
+    login: 'Giriş Yap',
+    user: 'Kullanıcı',
+    client: 'Müşteri',
   },
   hero: {
     title: 'FLY AI Akıllı Tedarik ve Ticaret Operasyon Yönetimi',

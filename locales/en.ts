@@ -6,6 +6,9 @@ export const en = {
     faq: 'FAQ',
     contact: 'Contact',
     demo: 'Request a Demo',
+    login: 'Login',
+    user: 'User',
+    client: 'Client',
   },
   hero: {
     title: 'FLY AI Intelligent Procurement & Trade Operations Management',

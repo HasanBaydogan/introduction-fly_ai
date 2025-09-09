@@ -36,7 +36,6 @@ const Hero = () => {
         <div className="relative z-20 flex w-[320px] flex-col gap-6 rounded-3xl bg-green-90 px-7 py-8">
           <div className="flexBetween">
             <p className="regular-16 text-gray-20">{t.hero.flowCard.header}</p>
-            <img src="/close.svg" alt="close" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
           </div>
           <div className="flex flex-col gap-3">
             <p className="bold-16 text-white">{t.hero.flowCard.line1}</p>

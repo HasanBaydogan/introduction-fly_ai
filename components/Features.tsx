@@ -10,12 +10,9 @@ const Features = () => {
       <div className="max-container padding-container relative w-full flex justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <img
-            src="/phones.png"
+            src="/Services.png"
             alt="screens"
-            width={440}
-            height={1000}
-            className="feature-phone"
-            style={{ width: 'auto', height: 'auto' }}
+            className="feature-airplane"
           />
         </div>
 

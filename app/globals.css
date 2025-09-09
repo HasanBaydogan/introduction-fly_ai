@@ -30,6 +30,9 @@ body {
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
   }
+  .btn_dark_blue { 
+    @apply  bg-blue-500 px-8 py-4 text-white transition-all hover:bg-black
+  }
   
   .max-container {
     @apply mx-auto max-w-[1440px];
@@ -135,8 +138,8 @@ body {
   }
 
   /* Feature */
-  .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+  .feature-airplane {
+    @apply absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden lg:flex h-screen max-h-[350px] w-auto max-w-[40%];
   }
 
   /* Get App */
