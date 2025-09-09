@@ -144,15 +144,27 @@ const Navbar = () => {
               <button className={`regular-14 ${lang==='tr'?'font-bold':''}`} onClick={() => setLang('tr')}>TR</button>
             </div>
             <div className="mt-auto pt-6">
-              <div className="mb-3">
-                <Button 
-                  type="button"
-                  title={t.nav.demo}
-                  icon="/user.svg"
-                  variant="btn_dark_green"
-                />
+              <div className="space-y-2">
+                <button 
+                  className="w-full px-6 py-3 regular-14 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors flex items-center justify-center gap-2" 
+                  onClick={() => { setMobileOpen(false); }}
+                >
+                  <img src="/user.svg" alt="demo" width={16} height={16} />
+                  {t.nav.demo}
+                </button>
+                <button 
+                  className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors" 
+                  onClick={() => { setMobileOpen(false); router.push('/login/user'); }}
+                >
+                  {t.nav.user} {t.nav.login}
+                </button>
+                <button 
+                  className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors" 
+                  onClick={() => { setMobileOpen(false); router.push('/login/client'); }}
+                >
+                  {t.nav.client} {t.nav.login}
+                </button>
               </div>
-              <button className="w-full px-6 py-3 regular-14 rounded-full bg-blue-500 text-white" onClick={() => { setMobileOpen(false); setOpen(true); }}>{t.nav.login}</button>
             </div>
           </div>
         </>
