@@ -9,7 +9,7 @@ const Guide = () => {
     <section id="akis" className="flexCenter flex-col">
       <div className="padding-container max-container w-full pb-24">
         <img src="/folded-map.svg" alt="flow" width={50} height={50} style={{ width: 'auto', height: 'auto' }} />
-        <p className="uppercase regular-18 -mt-1 mb-3 text-green-50">{t.guide.kicker}</p>
+        <p className="uppercase regular-18 -mt-1 mb-3 text-blue-500">{t.guide.kicker}</p>
         <div className="flex flex-wrap justify-between gap-5 lg:gap-10">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[520px]">{t.guide.heading}</h2>
           <p className="regular-16 text-gray-30 xl:max-w-[620px]">{t.guide.sub}</p>
@@ -39,7 +39,7 @@ const Guide = () => {
             <div className='flex w-full flex-col'>
               <div className="flexBetween w-full">
                 <p className="regular-16 text-gray-20">{t.guide.current}</p>
-                <p className="bold-16 text-green-50">{t.guide.currentNote}</p>
+                <p className="bold-16 text-blue-500">{t.guide.currentNote}</p>
               </div>
               <p className="bold-20 mt-2">{t.guide.currentValue}</p>
             </div>
