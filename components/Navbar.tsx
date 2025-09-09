@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <img src="/FlyAI-Logo.png" alt="FLY AI" width={120} height={29} />
+        <img src="/fly_ai_logo.png" alt="FLY AI" width={150} height={29} />
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex">
