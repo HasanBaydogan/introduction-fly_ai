@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="flexCenter mb-24">
       <div className="padding-container max-container flex w-full flex-col gap-14">
-        <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
+        <div className="flex flex-col items-center md:items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <img src="/fly_ai_logo.png" alt="FLY AI" width={250} height={40} />
           </Link>
@@ -49,7 +49,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={t.footer.socialTitle} key="footer-socials">
-                <ul className="regular-14 flex gap-4 text-gray-30">
+                <ul className="regular-14 flex gap-4 text-gray-30 ">
                   {SOCIALS.links.map((link, idx) => (
                     <Link href="/" key={link + '-' + idx}
                     >

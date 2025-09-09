@@ -22,7 +22,7 @@ const Guide = () => {
           alt="flow-visual"
           width={1080}
           height={580}
-          className="w-full object-cover object-center 2xl:rounded-5xl md:ml-0"
+          className="w-full object-cover object-center 2xl:rounded-5xl mt-[180px] md:mt-0 md:ml-[450px]"
           style={{ width: '100%', height: 'auto' }}
         />
 
