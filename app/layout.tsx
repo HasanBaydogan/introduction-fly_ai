@@ -4,17 +4,18 @@ import './globals.css'
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { LanguageProvider } from '@/components/LanguageProvider';
+import TitleSync from '@/components/TitleSync';
 
 export const metadata: Metadata = {
-  title: 'FLY AI – Akıllı Tedarik ve Ticaret Operasyon Yönetimi',
+  title: 'FLY AI Intelligent Procurement & Trade Operations Management',
   description: 'RFQ’den teslimata tüm ticaret sürecinizi tek ekranda yöneten, ekipler arası iş birliği ve müşteri iletişimini hızlandıran operasyon yönetim platformu.',
   keywords: [
     'FLY AI', 'Operasyon Yönetimi', 'RFQ', 'PI', 'Proforma Fatura', 'Ödeme', 'Transit', 'Gümrük', 'Teslimat', 'Destek Merkezi', 'Chat', 'Supply Chain', 'İthalat', 'İhracat', 'Tedarik', 'B2B'
   ],
   icons: {
-    icon: '/FlyAI-Logo.png',
-    shortcut: '/FlyAI-Logo.png',
-    apple: '/FlyAI-Logo.png',
+    icon: '/flyai_logo.png',
+    shortcut: '/flyai_logo.png',
+    apple: '/flyai_logo.png',
   },
   openGraph: {
     title: 'FLY AI – Akıllı Tedarik ve Ticaret Operasyon Yönetimi',
@@ -41,6 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <LanguageProvider>
+          <TitleSync />
           <Navbar />
           <main className="relative overflow-hidden">
             {children}

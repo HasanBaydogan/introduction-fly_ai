@@ -47,7 +47,7 @@ const Navbar = () => {
         <img src="/fly_ai_logo.png" alt="FLY AI" width={150} height={29} />
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex">
+      <ul className="hidden h-full gap-12 lg:flex pt-7">
         {NAV_LINKS.map((link) => (
           <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
             {t.nav[link.key as 'home' | 'features' | 'flow' | 'faq' | 'contact'] ?? link.label}
@@ -61,7 +61,7 @@ const Navbar = () => {
         <button className={`regular-14 ${lang==='tr'?'font-bold':''}`} onClick={() => setLang('tr')}>TR</button>
       </div> */}
 
-      <div className="lg:flexCenter hidden">
+      <div className="lg:flexCenter hidden pt-7">
 
         <div className="hidden lg:flex items-center gap-2 p-4">
         <button className={`regular-14 ${lang==='en'?'font-bold':''}`} onClick={() => setLang('en')}>EN</button>
