@@ -9,7 +9,7 @@ export type SupportedLanguage = 'en' | 'tr';
 type LanguageContextValue = {
   lang: SupportedLanguage;
   setLang: (next: SupportedLanguage) => void;
-  t: typeof en;
+  t: typeof en | typeof tr;
 };
 
 const LanguageContext = createContext<LanguageContextValue | undefined>(undefined);

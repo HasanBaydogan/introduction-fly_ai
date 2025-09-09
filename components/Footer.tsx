@@ -16,10 +16,10 @@ const Footer = () => {
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-            {t.footer.columns.map((columns: { title: string; links: string[] }, idx: number) => (
+            {t.footer.columns.map((columns, idx) => (
               <FooterColumn title={columns.title} key={columns.title + '-' + idx}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
-                  {columns.links.map((link: string, linkIdx: number) => (
+                  {columns.links.map((link, linkIdx: number) => (
                     <Link href="/" key={link + '-' + linkIdx}>
                       {link}
                     </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={t.footer.contactTitle} key="footer-contact-info">
-                {t.footer.contactLinks.map((link: {label: string; value: string}, idx: number) => (
+                {t.footer.contactLinks.map((link, idx: number) => (
                   <Link
                     href="/"
                     key={link.label + '-' + idx}
