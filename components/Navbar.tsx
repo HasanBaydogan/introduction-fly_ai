@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation"
 const Navbar = () => {
   const { lang, setLang, t } = useLanguage()
   const [open, setOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
   const router = useRouter()
   const morphRef = useRef<HTMLDivElement | null>(null)
   const closeTimerRef = useRef<number | null>(null)
@@ -117,7 +118,45 @@ const Navbar = () => {
         height={32}
         className="inline-block cursor-pointer lg:hidden"
         style={{ width: 'auto', height: 'auto' }}
+        onClick={() => setMobileOpen(true)}
       />
+
+      {mobileOpen && (
+        <>
+          <div className="fixed inset-0 z-40 bg-black/50" onClick={() => setMobileOpen(false)} />
+          <div className="fixed top-0 right-0 z-50 h-full w-72 bg-white shadow-xl p-6 flex flex-col">
+            <div className="flex items-center justify-between mb-6">
+              <img src="/fly_ai_logo.png" alt="FLY AI" width={120} height={24} />
+              <button aria-label="Close menu" onClick={() => setMobileOpen(false)}>
+                <img src="/close.svg" alt="close" width={24} height={24} />
+              </button>
+            </div>
+            <ul className="flex flex-col gap-4">
+              {NAV_LINKS.map((link) => (
+                <Link href={link.href} key={link.key} className="regular-16 text-gray-90 py-2" onClick={() => setMobileOpen(false)}>
+                  {t.nav[link.key as 'home' | 'features' | 'flow' | 'faq' | 'contact'] ?? link.label}
+                </Link>
+              ))}
+            </ul>
+            <div className="mt-6 flex items-center gap-2">
+              <button className={`regular-14 ${lang==='en'?'font-bold':''}`} onClick={() => setLang('en')}>EN</button>
+              <span className="text-gray-30">/</span>
+              <button className={`regular-14 ${lang==='tr'?'font-bold':''}`} onClick={() => setLang('tr')}>TR</button>
+            </div>
+            <div className="mt-auto pt-6">
+              <div className="mb-3">
+                <Button 
+                  type="button"
+                  title={t.nav.demo}
+                  icon="/user.svg"
+                  variant="btn_dark_green"
+                />
+              </div>
+              <button className="w-full px-6 py-3 regular-14 rounded-full bg-blue-500 text-white" onClick={() => { setMobileOpen(false); setOpen(true); }}>{t.nav.login}</button>
+            </div>
+          </div>
+        </>
+      )}
     </nav>
   )
 }

@@ -27,8 +27,8 @@ const GetApp = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 items-center justify-end">
-          <img src="/phones.png" alt="phones" width={550} height={870} style={{ width: 'auto', height: 'auto' }} />
+        <div className="flex flex-1 items-center justify-center md:justify-end">
+          <img src="/phones.png" alt="phones" width={550} height={870} className="w-2/3 max-w-[420px] md:w-[480px] lg:w-[550px] h-auto" style={{ height: 'auto' }} />
         </div>
       </div>
     </section>

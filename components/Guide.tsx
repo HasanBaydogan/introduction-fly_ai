@@ -20,13 +20,13 @@ const Guide = () => {
         <img 
           src="/logistic.jpg"
           alt="flow-visual"
-          width={100}
+          width={1080}
           height={580}
-          className="w-full object-cover object-center 2xl:rounded-5xl"
-          style={{ width: 1080, height: 'auto' , marginLeft: 450}}
+          className="w-full object-cover object-center 2xl:rounded-5xl md:ml-0"
+          style={{ width: '100%', height: 'auto' }}
         />
 
-        <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20">
+        <div className="absolute left-3 right-3 top-3 md:left-[5%] md:right-auto md:top-10 lg:top-20 flex bg-white py-6 md:py-8 pl-4 md:pl-5 pr-5 md:pr-7 gap-3 rounded-3xl border shadow-md">
           <img 
             src="/meter.svg"
             alt="meter"
