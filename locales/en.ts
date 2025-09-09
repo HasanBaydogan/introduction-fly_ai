@@ -38,7 +38,7 @@ export const en = {
   features: {
     heading: 'Key Features',
     items: [
-      { title: 'All operations in one place', icon: '/folded-map.svg', description: 'Manage RFQ → PI → Payment → Transit → Customs → Delivery on a single screen.' },
+      { title: 'All operations in one place', icon: '/folded-map.svg', description: 'Manage RFQ → Quote → PO → PI → Payment → Transit → Customs → Delivery on a single screen.' },
       { title: 'Transparent progress', icon: '/manage.svg', description: 'Visual flow tracking with status tabs and badges; everyone stays aligned.' },
       { title: 'Faster coordination', icon: '/user.svg', description: 'Chat-based Support Center for messaging and file sharing.' },
       { title: 'Financial compliance', icon: '/calendar.svg', description: 'PI editing with multi-currency and bank details; payment tracking.' },
@@ -61,8 +61,8 @@ export const en = {
     contactTitle: 'Contact Us',
     socialTitle: 'Social',
     contactLinks: [
-      { label: 'Sales', value: 'sales@flyai.app' },
-      { label: 'Support', value: 'support@flyai.app' },
+      { label: 'Sales', value: 'sales@flyai.tr' },
+      { label: 'Support', value: 'support@flyai.tr' },
     ],
     columns: [
       { title: 'FLY AI', links: ['About', 'Technical Documentation', 'Privacy Policy', 'Terms of Use'] },

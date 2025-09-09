@@ -38,7 +38,7 @@ export const tr = {
   features: {
     heading: 'Ana Özellikler',
     items: [
-      { title: 'Tüm operasyon tek yerde', icon: '/folded-map.svg', description: 'RFQ → PI → Ödeme → Transit → Gümrük → Teslimat akışını tek ekranda yönetin.' },
+      { title: 'Tüm operasyon tek yerde', icon: '/folded-map.svg', description: 'RFQ → Quote → PO → PI → Ödeme → Taşıma → Gümrük → Teslimat akışını tek ekranda yönetin.' },
       { title: 'Şeffaf ilerleme', icon: '/manage.svg', description: 'Durum sekmeleri ve rozetlerle görsel akış takibi; herkes aynı sayfada.' },
       { title: 'Daha hızlı koordinasyon', icon: '/user.svg', description: 'Dahili Destek Merkezi ile sohbet tabanlı yazışma ve dosya paylaşımı.' },
       { title: 'Finansal uyum', icon: '/calendar.svg', description: 'Çoklu para birimi ve banka bilgileriyle PI düzenleme ve ödeme takibi.' },
@@ -61,8 +61,8 @@ export const tr = {
     contactTitle: 'Bize Ulaşın',
     socialTitle: 'Sosyal',
     contactLinks: [
-      { label: 'Satış', value: 'sales@flyai.app' },
-      { label: 'Destek', value: 'support@flyai.app' },
+      { label: 'Satış', value: 'sales@flyai.tr' },
+      { label: 'Destek', value: 'support@flyai.tr' },
     ],
     columns: [
       { title: 'FLY AI', links: ['Hakkımızda', 'Teknik Dokümantasyon', 'Gizlilik Politikası', 'Kullanım Şartları'] },
