@@ -6,7 +6,7 @@ import { useLanguage } from './LanguageProvider'
 const Guide = () => {
   const { t } = useLanguage()
   return (
-    <section id="akis" className="flexCenter flex-col">
+    <section id="akis" className="flexCenter flex-col py-5">
       <div className="padding-container max-container w-full pb-24">
         <img src="/folded-map.svg" alt="flow" width={50} height={50} style={{ width: 'auto', height: 'auto' }} />
         <p className="uppercase regular-18 -mt-1 mb-3 text-blue-500">{t.guide.kicker}</p>

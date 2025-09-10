@@ -76,14 +76,14 @@ const Camp = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          isSectionActive = entry.isIntersecting && entry.intersectionRatio >= 0.8;
+          isSectionActive = entry.isIntersecting && entry.intersectionRatio >= 0.6;
           if (!isSectionActive) {
             isHorizontalScrollComplete = false;
             setIsHorizontalScrolling(false);
           }
         });
       },
-      { threshold: [0.8, 1.0] }
+      { threshold: [0.6, 0.8, 1.0] }
     );
 
     observer.observe(section);
@@ -93,7 +93,9 @@ const Camp = () => {
 
       const maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
       const currentScroll = scrollContainer.scrollLeft;
-      const scrollDelta = e.deltaY > 0 ? 200 : -200;
+      
+      // Much smaller scroll delta for smoother movement
+      const scrollDelta = e.deltaY > 0 ? 60 : -60;
       const newScrollLeft = Math.max(0, Math.min(maxScroll, currentScroll + scrollDelta));
       
       // Check if we can scroll horizontally
@@ -104,10 +106,8 @@ const Camp = () => {
         e.preventDefault();
         e.stopPropagation();
         
-        scrollContainer.scrollTo({
-          left: newScrollLeft,
-          behavior: 'smooth'
-        });
+        // Use direct scrollLeft assignment for immediate response
+        scrollContainer.scrollLeft = newScrollLeft;
         
         const progress = maxScroll > 0 ? newScrollLeft / maxScroll : 0;
         setHorizontalScrollProgress(progress);
@@ -118,7 +118,7 @@ const Camp = () => {
           isHorizontalScrollComplete = true;
           setTimeout(() => {
             setIsHorizontalScrolling(false);
-          }, 1000);
+          }, 500);
         }
       } else if (isHorizontalScrollComplete) {
         // Allow vertical scroll to continue

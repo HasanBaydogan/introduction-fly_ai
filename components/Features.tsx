@@ -2,21 +2,14 @@
 // ...existing code...
 import React from 'react'
 import { useLanguage } from './LanguageProvider'
+import Button from './Button';
 
 const Features = () => {
   const { t } = useLanguage()
   return (
-    <section id="ozellikler" className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
-      <div className="max-container padding-container relative w-full flex justify-end">
-        <div className="flex flex-1 lg:min-h-[900px]">
-          <img
-            src="/Services.png"
-            alt="screens"
-            className="feature-airplane"
-          />
-        </div>
-
-        <div className="z-20 flex w-full flex-col lg:w-[60%]">
+        <section className="relative max-container padding-container flex flex-col gap-12 py-10 pb-20 md:gap-16 lg:py-25 xl:flex-row">
+      <div className="hero-map" />
+      <div className="z-20 flex w-full flex-col lg:w-[60%]">
           <div className='relative'>
             <h2 className="bold-40 lg:bold-64">{t.features.heading}</h2>
           </div>
@@ -31,7 +24,6 @@ const Features = () => {
             ))}
           </ul>
         </div>
-      </div>
     </section>
   )
 }
