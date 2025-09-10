@@ -45,7 +45,7 @@ const Navbar = () => {
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
-        <img src="/fly_ai_logo.png" alt="FLY AI" width={150} height={29} />
+        <img src="/FLY_AI_logo_new.png" alt="FLY AI" width={150} height={29} />
       </Link>
 
       <ul className="hidden h-full gap-12 lg:flex pt-7">
@@ -126,7 +126,7 @@ const Navbar = () => {
           <div className="fixed inset-0 z-40 bg-black/50" onClick={() => setMobileOpen(false)} />
           <div className="fixed top-0 right-0 z-50 h-full w-72 bg-white shadow-xl p-6 flex flex-col">
             <div className="flex items-center justify-between mb-6">
-              <img src="/fly_ai_logo.png" alt="FLY AI" width={120} height={24} />
+              <img src="/FLY_AI_logo_new.png" alt="FLY AI" width={120} height={24} />
               <button aria-label="Close menu" onClick={() => setMobileOpen(false)}>
                 <img src="/close.svg" alt="close" width={24} height={24} />
               </button>

@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-center md:items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
-            <img src="/fly_ai_logo.png" alt="FLY AI" width={250} height={40} />
+            <img src="/FLY_AI_logo_new.png" alt="FLY AI" width={250} height={40} />
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>

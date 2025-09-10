@@ -163,9 +163,9 @@ const Camp = () => {
       {/* Desktop version - horizontally scrollable with scroll hijacking */}
       <div className="hidden lg:block relative h-[500px] xl:h-[700px] w-full">
         {/* Scroll progress indicator */}
-        <div className="absolute top-4 right-4 z-20 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+        {/* <div className="absolute top-4 right-4 z-20 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
           Scroll: {Math.round(horizontalScrollProgress * 100)}% | Active: {isHorizontalScrolling ? 'Yes' : 'No'}
-        </div>
+        </div> */}
         
         <div 
           ref={scrollContainerRef}
