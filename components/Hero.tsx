@@ -8,14 +8,14 @@ const Hero = () => {
   return (
 <section id="ozellikler" className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat">
       <div className="max-container padding-container relative w-full flex justify-end">
-        <div className="flex lg:min-h-[900px]">
+        <div className="flex lg:flex-1 lg:min-h-[900px]">
           <img
             src="/Services.png"
             alt="screens"
             className="feature-airplane"
           />
         </div>
-        <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
+         <div className="relative z-20 flex lg:flex-1 flex-col xl:w-1/2">
         <h1 className="bold-52 lg:bold-88">{t.hero.title}</h1>
         <p className="regular-16 mt-4 md:mt-6 text-gray-30 xl:max-w-[720px]">{t.hero.summary}</p>
 
