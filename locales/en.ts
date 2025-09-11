@@ -11,7 +11,7 @@ export const en = {
     client: 'Client',
   },
   hero: {
-    title: 'FLY AI Intelligent Procurement & Trade Operations Management',
+    title: 'Intelligent Procurement & Trade Operations Management',
     summary:
       'FLY AI is a modern operations platform that manages your entire trade process from quote to delivery on a single screen, accelerating cross-team collaboration and customer communication. It unifies RFQ, PI management, payment & logistics, customs processes and support requests in a flow-based structure.',
     ctaPrimary: 'Request a Demo',

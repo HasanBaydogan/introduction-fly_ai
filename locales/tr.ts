@@ -11,7 +11,7 @@ export const tr = {
     client: 'Müşteri',
   },
   hero: {
-    title: 'FLY AI Akıllı Tedarik ve Ticaret Operasyon Yönetimi',
+    title: 'Akıllı Tedarik ve Ticaret Operasyon Yönetimi',
     summary:
       'FLY AI, tekliften teslimata tüm ticaret sürecinizi tek ekranda yöneten, ekipler arası iş birliği ve müşteri iletişimini hızlandıran modern bir operasyon yönetim platformudur. Teklif/RFQ, PI yönetimi, ödeme ve lojistik aşamaları, gümrük süreçleri ve destek taleplerini akış tabanlı bir yapıda birleştirir.',
     ctaPrimary: 'Demo Talep Et',
