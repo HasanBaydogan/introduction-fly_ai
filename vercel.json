@@ -1,9 +1,9 @@
 {
   "rewrites": [
-    { "source": "/client", "destination": "https://client-app.vercel.app/client" },
-    { "source": "/client/:path*", "destination": "https://client-app.vercel.app/client/:path*" },
+    { "source": "/client", "destination": "https://client-flyai-app.vercel.app/client" },
+    { "source": "/client/:path*", "destination": "https://client-flyai-app.vercel.app/client/:path*" },
 
-    { "source": "/user", "destination": "https://user-app.vercel.app/user" },
-    { "source": "/user/:path*", "destination": "https://user-app.vercel.app/user/:path*" }
+    { "source": "/user", "destination": "https://user-flyai-app.vercel.app/user" },
+    { "source": "/user/:path*", "destination": "https://user-flyai-app.vercel.app/user/:path*" }
   ]
 }
