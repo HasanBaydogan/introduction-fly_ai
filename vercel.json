@@ -1,7 +1,4 @@
 {
-    "redirects": [
-    { "source": "/client", "destination": "/client/", "permanent": false }
-  ],
   "rewrites": [
     { "source": "/client", "destination": "https://client-flyai-app.vercel.app/client" },
     { "source": "/client/:path*", "destination": "https://client-flyai-app.vercel.app/client/:path*" },
