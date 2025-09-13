@@ -94,7 +94,7 @@ const Navbar = () => {
               <div className="w-px self-center h-5 bg-white/30" />
               <button
                 className="flex-1 px-5 py-3 regular-14 hover:bg-white/10 transition-colors"
-                onClick={() => { setOpen(false); router.push('/login/client'); }}
+                onClick={() => { setOpen(false); router.push('/client/login'); }}
               >
                 {t.nav.client}
               </button>
