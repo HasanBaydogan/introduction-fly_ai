@@ -160,7 +160,7 @@ const Navbar = () => {
                 </button>
                 <button 
                   className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors" 
-                  onClick={() => { setMobileOpen(false); router.push('/login/client'); }}
+                  onClick={() => { setMobileOpen(false); router.push('/client/login'); }}
                 >
                   {t.nav.client} {t.nav.login}
                 </button>
