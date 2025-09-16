@@ -1,0 +1,3 @@
+[33m2f324f5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mhbintro/main[m[33m)[m Add client route and fix deployment issues - Added manifest.json - Created /client route with login page - Fixed vercel.json routing configuration - Updated metadata configuration
+[33me7caeae[m[33m ([m[1;31mintro/main[m[33m)[m görseller düzenlendi
+[33m9ad5696[m nginx+ client route-5
