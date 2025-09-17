@@ -31,22 +31,55 @@ const Guide = () => {
             src="/meter.svg"
             alt="meter"
             width={16}
-            height={158}
+            height={250}
             className="h-full w-auto"
             style={{ width: 'auto', height: 'auto' }}
           />
           <div className="flexBetween flex-col">
             <div className='flex w-full flex-col'>
               <div className="flexBetween w-full">
-                <p className="regular-16 text-gray-20">{t.guide.current}</p>
+                <p className="regular-16 text-gray-20">{t.guide.firstCurrent}</p>
                 <p className="bold-16 text-blue-500">{t.guide.currentNote}</p>
               </div>
-              <p className="bold-20 mt-2">{t.guide.currentValue}</p>
+              <p className="bold-20 mt-2">{t.guide.step1}</p>
             </div>
 
             <div className='flex w-full flex-col'>
+              <div className="flexBetween w-full">
+                <p className="regular-16 text-gray-20">{t.guide.secondCurrent}</p>
+                {/* <p className="bold-16 text-blue-500">{t.guide.secondCurrent}</p> */}
+              </div>
+              <p className="bold-20 mt-2">{t.guide.step2}</p>
+            </div>
+            <div className='flex w-full flex-col'>
+              <div className="flexBetween w-full">
+                <p className="regular-16 text-gray-20">{t.guide.thirtCurrent}</p>
+                {/* <p className="bold-16 text-blue-500">{t.guide.currentNote}</p> */}
+              </div>
+              <p className="bold-20 mt-2">{t.guide.step3}</p>
+            </div>
+            <div className='flex w-full flex-col'>
+              <div className="flexBetween w-full">
+                <p className="regular-16 text-gray-20">{t.guide.fourthCurrent}</p>
+                {/* <p className="bold-16 text-blue-500">{t.guide.currentNote}</p> */}
+              </div>
+              <p className="bold-20 mt-2">{t.guide.step4}</p>
+            </div>
+{/* 
+            <div className='flex w-full flex-col'>
+              <div className="flexBetween w-full">
+                <p className="regular-16 text-gray-20">{t.guide.current}</p>
+                {/* <p className="bold-16 text-blue-500">{t.guide.currentNote}</p> 
+              </div>
+              <p className="bold-20 mt-2">{t.guide.step5}</p>
+            </div> */}
+
+             <div className='flex w-full flex-col'>
+              <div className="flexBetween w-full">
               <p className="regular-16 text-gray-20">{t.guide.next}</p>
-              <h4 className="bold-20 mt-2 whitespace-nowrap">{t.guide.nextValue}</h4>
+                <p className="bold-16 text-blue-500">{t.guide.finalNote}</p>
+              </div>
+              <h4 className="bold-20 mt-2 whitespace-nowrap">{t.guide.step5}</h4>
             </div>
           </div>
         </div>

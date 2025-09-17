@@ -13,7 +13,7 @@ const Features = () => {
           <div className='relative'>
             <h2 className="bold-40 lg:bold-64">{t.features.heading}</h2>
           </div>
-          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
+          <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-15">
             {t.features.items.map((feature) => (
               <FeatureItem 
                 key={feature.title}
@@ -37,12 +37,14 @@ type FeatureItem = {
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
-      <div className="rounded-full p-4 lg:p-7 bg-blue-500">
-        <img src={icon} alt="map" width={28} height={28} style={{ width: 'auto', height: 'auto' }} />
+      <div className="flex items-center gap-4">
+        <div className="rounded-full p-4 lg:p-7 bg-blue-500">
+          <img src={icon} alt="map" width={28} height={28} style={{ width: 'auto', height: 'auto' }} />
+        </div>
+        <h2 className="bold-20 lg:bold-32 capitalize">
+          {title}
+        </h2>
       </div>
-      <h2 className="bold-20 lg:bold-32 mt-5 capitalize">
-        {title}
-      </h2>
       <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
         {description}
       </p>

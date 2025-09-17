@@ -96,7 +96,7 @@ body {
   }
 
   .bold-88 {
-    @apply text-[88px] font-[700] leading-[120%];
+    @apply text-[70px] font-[600] leading-[110%];
   }
 
   .bold-64 {
@@ -125,6 +125,10 @@ body {
 
   .bold-16 {
     @apply text-[16px] font-[700];
+  }
+
+  .bold-24 {
+    @apply text-[24px] font-[700];
   }
 
   /* Hero */

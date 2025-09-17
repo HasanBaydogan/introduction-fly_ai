@@ -19,11 +19,43 @@ const Footer = () => {
             {t.footer.columns.map((columns, idx) => (
               <FooterColumn title={columns.title} key={columns.title + '-' + idx}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
-                  {columns.links.map((link, linkIdx: number) => (
-                    <Link href="/" key={link + '-' + linkIdx}>
-                      {link}
-                    </Link>
-                  ))}
+                  {columns.links.map((link, linkIdx: number) => {
+                    // Define proper navigation URLs for footer links
+                    const getFooterLinkHref = (linkText: string) => {
+                      switch (linkText.toLowerCase()) {
+                        case 'about':
+                        case 'hakkımızda':
+                          return '#ozellikler';
+                        case 'technical documentation':
+                        case 'teknik dokümantasyon':
+                          return '#akis';
+                        case 'privacy policy':
+                        case 'gizlilik politikası':
+                          return '/privacy-policy';
+                        case 'terms of use':
+                        case 'kullanım şartları':
+                          return '/terms-of-use';
+                        case 'faq':
+                        case 'sss':
+                          return '#sss';
+                        case 'blog':
+                          return '/blog';
+                        case 'api v1':
+                          return '/api-docs';
+                        case 'sürüm notları':
+                        case 'release notes':
+                          return '/release-notes';
+                        default:
+                          return '/';
+                      }
+                    };
+                    
+                    return (
+                      <Link href={getFooterLinkHref(link)} key={link + '-' + linkIdx}>
+                        {link}
+                      </Link>
+                    );
+                  })}
                 </ul>
               </FooterColumn>
             ))}
@@ -31,8 +63,7 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={t.footer.contactTitle} key="footer-contact-info">
                 {t.footer.contactLinks.map((link, idx: number) => (
-                  <Link
-                    href="/"
+                  <div
                     key={link.label + '-' + idx}
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
@@ -42,7 +73,7 @@ const Footer = () => {
                     <p className="medium-14 whitespace-nowrap text-blue-70">
                       {link.value}
                     </p>
-                  </Link>
+                  </div>   
                 ))}
               </FooterColumn>
             </div>
@@ -50,12 +81,36 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={t.footer.socialTitle} key="footer-socials">
                 <ul className="regular-14 flex gap-4 text-gray-30 ">
-                  {SOCIALS.links.map((link, idx) => (
-                    <Link href="/" key={link + '-' + idx}
-                    >
-                      <img src={link} alt="logo" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
-                    </Link>
-                  ))}
+                  {SOCIALS.links.map((link, idx) => {
+                    // Define proper social media URLs
+                    const getSocialHref = (iconPath: string) => {
+                      if (iconPath.includes('linkedin')) {
+                        return 'https://linkedin.com/company/flyai';
+                      } else if (iconPath.includes('nextsosyal')) {
+                        return 'https://nextsosyal.com';
+                      } else if (iconPath.includes('instagram')) {
+                        return 'https://instagram.com/flyai';
+                      } else if (iconPath.includes('twitter')) {
+                        return 'https://twitter.com/flyai';
+                      } else if (iconPath.includes('youtube')) {
+                        return 'https://youtube.com/@flyai';
+                      } else if (iconPath.includes('wordpress')) {
+                        return 'https://blog.flyai.tr';
+                      }
+                      return '#';
+                    };
+
+                    return (
+                      <Link 
+                        href={getSocialHref(link)} 
+                        key={link + '-' + idx}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={link} alt="social media" width={24} height={24} style={{ width: 'auto', height: 'auto' }} />
+                      </Link>
+                    );
+                  })}
                 </ul>
               </FooterColumn>
             </div>

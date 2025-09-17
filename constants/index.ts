@@ -81,18 +81,19 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Bize Ulaşın',
   links: [
-    { label: 'Satış', value: 'sales@flyai.tr' },
-    { label: 'Destek', value: 'support@flyai.tr' },
+    { label: 'Satış', value: 'rfq@flyai.tr' },
+    { label: 'Destek', value: 'info@flyai.tr' },
   ],
 };
 
 export const SOCIALS = {
   title: 'Sosyal',
   links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-    '/youtube.svg',
-    '/wordpress.svg',
+    '/linkedin.svg',
+    'nextsosyal.svg',
+    // '/instagram.svg',
+    // '/twitter.svg',
+    // '/youtube.svg',
+    // '/wordpress.svg',
   ],
 };
