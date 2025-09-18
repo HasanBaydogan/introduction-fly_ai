@@ -109,7 +109,7 @@ Teşekkürler,
     step2: 'Ödeme',
     step3: 'Transit Teslimatı',
     step4: 'Gümrük',
-    step5: 'Müşteriye Teslimat',
+    step5: 'Teslimat',
     step6: 'Cancellation and Refund',
   },
   faq: {

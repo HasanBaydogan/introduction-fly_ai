@@ -145,7 +145,7 @@ const Camp = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} id="sorun-cozum" className="2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+    <section ref={sectionRef} id="sorun-cozum" className="2xl:max-container relative flex flex-col pt-10  lg:pt-20 xl:mb-20">
       {/* Mobile version */}
       <div className="flex flex-col lg:hidden h-auto w-full items-start justify-start gap-8 sm:gap-12 md:gap-16">
         <CampSite 
