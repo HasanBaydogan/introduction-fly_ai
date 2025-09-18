@@ -122,7 +122,7 @@ Thank you,
   items: [
     {
       question: 'What is the Aviation Supply Management Tool and how does it work?',
-      answer: 'Our SMT (Supply Management Tool) is a comprehensive aviation parts procurement and supply chain management system. It manages the complete workflow from RFQ (Request for Quote) creation to final delivery, including quote management, PI (Proforma Invoice) processing, PO (Purchase Order) handling, and shipment tracking with detailed status updates throughout the aviation parts supply chain.'
+      answer: 'Our Supply Management Tool is a comprehensive aviation parts procurement and supply chain management system. It manages the complete workflow from RFQ (Request for Quote) creation to final delivery, including quote management, PI (Proforma Invoice) processing, PO (Purchase Order) handling, and shipment tracking with detailed status updates throughout the aviation parts supply chain.'
     },
     {
       question: 'Which industries is it suitable for?',

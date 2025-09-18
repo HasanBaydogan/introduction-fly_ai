@@ -122,7 +122,7 @@ Teşekkürler,
   items: [
     {
       question: 'Havacılık Tedarik Yönetim Aracı nedir ve nasıl çalışır?',
-      answer: 'SMT (Tedarik Yönetim Aracımız), kapsamlı bir havacılık parçaları tedarik ve tedarik zinciri yönetim sistemidir. RFQ (Teklif Talebi) oluşturulmasından nihai teslimat aşamasına kadar tüm iş akışını yönetir; teklif yönetimi, PI (Proforma Fatura) işlemleri, PO (Satın Alma Siparişi) yönetimi ve havacılık parçaları tedarik zinciri boyunca detaylı durum güncellemeleri ile sevkiyat takibini içerir.'
+      answer: 'Tedarik Yönetim Aracımız, kapsamlı bir havacılık parçaları tedarik ve tedarik zinciri yönetim sistemidir. RFQ (Teklif Talebi) oluşturulmasından nihai teslimat aşamasına kadar tüm iş akışını yönetir; teklif yönetimi, PI (Proforma Fatura) işlemleri, PO (Satın Alma Siparişi) yönetimi ve havacılık parçaları tedarik zinciri boyunca detaylı durum güncellemeleri ile sevkiyat takibini içerir.'
     },
     {
       question: 'Hangi sektörler için uygundur?',
