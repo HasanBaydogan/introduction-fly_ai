@@ -100,7 +100,6 @@ Thank you,
     status10: 'Official Invoice',
     status11: 'Customs Procedures',
     status12: 'Way on the Destination',
-
     currentNote: 'Pending approval',
     finalNote: 'Done!',
     currentValue: 'Trade Confirmation',
