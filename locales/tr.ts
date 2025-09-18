@@ -105,43 +105,43 @@ Teşekkürler,
     step6: 'Cancellation and Refund',
   },
   faq: {
-    kicker: 'Sık Sorulan Sorular',
-    heading: 'SSS',
-    subtitle: 'FLY AI hakkında en çok merak edilen konuları yanıtladık. Sorularınız için bizimle iletişime geçebilirsiniz.',
-    contactTitle: 'Başka sorunuz mu var?',
-    contactSubtitle: 'Ekibimiz size yardımcı olmaktan mutluluk duyar.',
-    contactEmail: 'Bize Yazın',
-    items: [
-      {
-        question: 'FLY AI nedir ve nasıl çalışır?',
-        answer: 'FLY AI, tedarik ve ticaret operasyonlarını tek platformda yöneten akıllı bir çözümdür. RFQ\'dan teslimata kadar tüm süreçlerinizi görsel akış tabanlı bir yapıda takip edebilir, ekipler arası koordinasyonu hızlandırabilir ve müşteri iletişimini tek merkezden yönetebilirsiniz.'
-      },
-      {
-        question: 'Hangi sektörler için uygun?',
-        answer: 'FLY AI özellikle ithalat-ihracat, tedarik zinciri yönetimi, lojistik ve ticaret alanlarında faaliyet gösteren şirketler için tasarlanmıştır. Havacılık, otomotiv, elektronik ve endüstriyel ürünler gibi sektörlerde başarıyla kullanılmaktadır.'
-      },
-      {
-        question: 'Mevcut sistemlerimle entegre olabilir mi?',
-        answer: 'Evet, FLY AI API desteği ile mevcut ERP, CRM ve muhasebe sistemlerinizle entegre olabilir. Ayrıca Excel dosyalarını içe aktarma ve e-posta entegrasyonu gibi özelliklerle mevcut iş akışlarınızı kesintisiz şekilde devam ettirebilirsiniz.'
-      },
-      {
-        question: 'Güvenlik önlemleri nelerdir?',
-        answer: 'FLY AI, SSL şifreleme, çok faktörlü kimlik doğrulama ve düzenli güvenlik güncellemeleri ile verilerinizi korur. GDPR uyumlu veri işleme politikalarımız ve ISO 27001 standartlarına uygun güvenlik protokollerimiz mevcuttur.'
-      },
-      {
-        question: 'Fiyatlandırma nasıl çalışıyor?',
-        answer: 'FLY AI esnek fiyatlandırma planları sunar. Kullanıcı sayısı, işlem hacmi ve ihtiyaç duyduğunuz özellikler temel alınarak özelleştirilmiş teklifler hazırlanır. 30 günlük ücretsiz deneme sürümü ile platformu test edebilirsiniz.'
-      },
-      {
-        question: 'Teknik destek nasıl alırım?',
-        answer: 'Platform içindeki Destek Merkezi üzerinden 7/24 canlı destek alabilirsiniz. Ayrıca e-posta (info@flyai.tr), telefon ve video görüşme desteği de mevcuttur. Kurulum ve eğitim süreçlerinde özel danışman desteği sağlanır.'
-      },
-      {
-        question: 'Demo talep etmek için ne yapmam gerekiyor?',
-        answer: 'Ana sayfadaki "Demo Talep Et" butonuna tıklayarak form doldurabilir veya doğrudan rfq@flyai.tr adresine e-posta gönderebilirsiniz. Ekibimiz 24 saat içinde sizinle iletişime geçerek demo randevusu planlar.'
-      }
-    ]
-  },
+  kicker: 'Sıkça Sorulan Sorular',
+  heading: 'SSS',
+  subtitle: 'Havacılık Tedarik Yönetim Aracımız hakkında en sık sorulan soruları yanıtladık. Diğer sorularınız için bizimle iletişime geçmekten çekinmeyin.',
+  contactTitle: 'Başka bir sorunuz mu var?',
+  contactSubtitle: 'Ekibimiz size yardımcı olmaktan mutluluk duyar.',
+  contactEmail: 'Bize Ulaşın',
+  items: [
+    {
+      question: 'Havacılık Tedarik Yönetim Aracı nedir ve nasıl çalışır?',
+      answer: 'SMT (Tedarik Yönetim Aracımız), kapsamlı bir havacılık parçaları tedarik ve tedarik zinciri yönetim sistemidir. RFQ (Teklif Talebi) oluşturulmasından nihai teslimat aşamasına kadar tüm iş akışını yönetir; teklif yönetimi, PI (Proforma Fatura) işlemleri, PO (Satın Alma Siparişi) yönetimi ve havacılık parçaları tedarik zinciri boyunca detaylı durum güncellemeleri ile sevkiyat takibini içerir.'
+    },
+    {
+      question: 'Hangi sektörler için uygundur?',
+      answer: 'Sistem özellikle havacılık ve havacılık-uzay endüstrileri için tasarlanmıştır. Aviyonik, iniş takımları, aktüatörler ve kontrol sistemleri, aerostrüktürler ve uçak lastikleri dahil olmak üzere havacılık parçaları tedarikinde uzmanlaşmıştır. Çeşitli uçak tiplerini destekler ve Collins Aerospace, Honeywell, Safran gibi büyük OEM\'lerle ve diğer havacılık tedarikçileriyle çalışır.'
+    },
+    {
+      question: 'Hangi raporları ve analizleri alabilirim?',
+      answer: 'Sistem kapsamlı raporlama ve analitik özellikleri sunar. Kullanıcı istatistikleri, teklif analizleri, tedarikçi performans raporları, finansal özetler ve lojistik takip raporları oluşturabilirsiniz. Gerçek zamanlı dashboard\'lar ile RFQ süreçlerinizi, PI/PO durumlarını ve tedarik zinciri performansınızı anlık olarak izleyebilir, Excel formatında detaylı raporlar alabilirsiniz.'
+    },
+    {
+      question: 'Güvenlik önlemleri nelerdir?',
+      answer: 'Sistem, farklı kullanıcı türleri (Satın Alma, Lojistik, Finans, Admin, Müşteri) için izinlerle rol tabanlı erişim kontrolü uygular. Güvenli kimlik doğrulama, veri şifreleme ve tüm işlemler için kapsamlı denetim izleri içerir. Sistem havacılık endüstrisi güvenlik standartlarına uygun olup tüm kullanıcı aktivitelerinin detaylı kayıtlarını tutar.'
+    },
+    {
+      question: 'Fiyatlandırma nasıl çalışır?',
+      answer: 'Fiyatlandırma kullanıcı rolleri, işlem hacmi ve özel özellik gereksinimlerine dayanır. Sistem farklı departmanlar için çeşitli izin seviyeleri sunar (RFQ-Teklif yönetimi, Parça yönetimi, Müşteri yönetimi, Finans, İstatistikler). Havacılık işletmenizin ihtiyaçlarına göre özelleştirilmiş bir teklif için satış ekibimizle iletişime geçin.'
+    },
+    {
+      question: 'Teknik destek nasıl alabilirim?',
+      answer: 'Teknik destek, platform içindeki yerleşik Destek Merkezi aracılığıyla Yazılım ve Ticaret departmanları için ayrı kanallarla mevcuttur. Sistem içinde doğrudan destek talepleri oluşturabilirsiniz ve teknik ekibimiz sistem konfigürasyonu, kullanıcı eğitimi ve entegrasyon desteği konularında yardım sağlar.'
+    },
+    {
+      question: 'Demo talep etmek için ne yapmam gerekir?',
+      answer: 'Havacılık Tedarik Yönetim Aracının demosunu talep etmek için platform üzerinden ekibimizle iletişime geçin veya doğrudan ulaşın. Uzmanlarımız RFQ iş akışı, parça yönetimi, tedarikçi ilişkileri, PI/PO işlemleri ve havacılık parçaları tedariki ve tedarik zinciri yönetimine özel lojistik takip özelliklerini gösterecektir.'
+    }
+  ]
+},
   footer: {
     rights: '2025 FLY AI | Tüm hakları saklıdır',
     contactTitle: 'Bize Ulaşın',

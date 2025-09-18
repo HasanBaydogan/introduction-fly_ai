@@ -16,9 +16,9 @@ const Hero = () => {
             className="feature-airplane"
           />
         </div>
-         <div className="relative z-20 flex lg:flex-1 flex-col">
-        <h1 className="bold-52 lg:bold-88 text-blue-600">{t.hero.title}</h1>
-        <p className="regular-16 mt-4 md:mt-6 xl:max-w-[720px]">{t.hero.summary}</p>
+        <div className="relative z-20 flex lg:flex-1 flex-col pt-44">
+          <h1 className="bold-52 lg:bold-88 text-blue-600">{t.hero.title}</h1>
+          <p className="regular-16 mt-4 md:mt-6 xl:max-w-[720px]">{t.hero.summary}</p>
         <div className="flex flex-col w-full gap-3 sm:flex-row my-8">
           <Button 
             type="button" 

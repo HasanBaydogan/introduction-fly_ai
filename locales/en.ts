@@ -104,44 +104,44 @@ Thank you,
     step5: 'Delivery to Client → Successfully',
     step6: 'Cancellation and Refund',
   },
-  faq: {
-    kicker: 'Frequently Asked Questions',
-    heading: 'FAQ',
-    subtitle: 'We\'ve answered the most frequently asked questions about FLY AI. Feel free to contact us for any other inquiries.',
-    contactTitle: 'Have another question?',
-    contactSubtitle: 'Our team is happy to help you.',
-    contactEmail: 'Contact Us',
-    items: [
-      {
-        question: 'What is FLY AI and how does it work?',
-        answer: 'FLY AI is an intelligent solution that manages procurement and trade operations on a single platform. You can track all your processes from RFQ to delivery in a visual flow-based structure, accelerate cross-team coordination, and manage customer communication from a single center.'
-      },
-      {
-        question: 'Which industries is it suitable for?',
-        answer: 'FLY AI is designed especially for companies operating in import-export, supply chain management, logistics and trade. It is successfully used in sectors such as aerospace, automotive, electronics and industrial products.'
-      },
-      {
-        question: 'Can it integrate with my existing systems?',
-        answer: 'Yes, FLY AI can integrate with your existing ERP, CRM and accounting systems with API support. You can also continue your existing workflows seamlessly with features such as Excel file import and email integration.'
-      },
-      {
-        question: 'What are the security measures?',
-        answer: 'FLY AI protects your data with SSL encryption, multi-factor authentication and regular security updates. We have GDPR compliant data processing policies and security protocols compliant with ISO 27001 standards.'
-      },
-      {
-        question: 'How does pricing work?',
-        answer: 'FLY AI offers flexible pricing plans. Customized offers are prepared based on the number of users, transaction volume and features you need. You can test the platform with a 30-day free trial.'
-      },
-      {
-        question: 'How do I get technical support?',
-        answer: 'You can get 24/7 live support through the Support Center within the platform. Email (info@flyai.tr), phone and video call support are also available. Special consultant support is provided during installation and training processes.'
-      },
-      {
-        question: 'What do I need to do to request a demo?',
-        answer: 'You can fill out the form by clicking the "Request Demo" button on the homepage or send an email directly to rfq@flyai.tr. Our team will contact you within 24 hours to schedule a demo appointment.'
-      }
-    ]
-  },
+ faq: {
+  kicker: 'Frequently Asked Questions',
+  heading: 'FAQ',
+  subtitle: 'We\'ve answered the most frequently asked questions about our Aviation Supply Management Tool. Feel free to contact us for any other inquiries.',
+  contactTitle: 'Have another question?',
+  contactSubtitle: 'Our team is happy to help you.',
+  contactEmail: 'Contact Us',
+  items: [
+    {
+      question: 'What is the Aviation Supply Management Tool and how does it work?',
+      answer: 'Our SMT (Supply Management Tool) is a comprehensive aviation parts procurement and supply chain management system. It manages the complete workflow from RFQ (Request for Quote) creation to final delivery, including quote management, PI (Proforma Invoice) processing, PO (Purchase Order) handling, and shipment tracking with detailed status updates throughout the aviation parts supply chain.'
+    },
+    {
+      question: 'Which industries is it suitable for?',
+      answer: 'The system is specifically designed for aviation and aerospace industries. It specializes in managing aviation parts procurement including avionics, landing gear, actuators & control systems, aerostructures, and aircraft tyres. It supports various aircraft types and works with major OEMs like Collins Aerospace, Honeywell, Safran, and other aviation suppliers.'
+    },
+    {
+      question: 'What reports and analytics can I access?',
+      answer: 'The system offers comprehensive reporting and analytics capabilities. You can generate user statistics, quote analyses, supplier performance reports, financial summaries, and logistics tracking reports. With real-time dashboards, you can instantly monitor your RFQ processes, PI/PO statuses, and supply chain performance, while accessing detailed reports in Excel format for further analysis.'
+    },
+    {
+      question: 'What are the security measures?',
+      answer: 'The system implements role-based access control with permissions for different user types (Procurement, Logistics, Finance, Admin, Client). It includes secure authentication, data encryption, and comprehensive audit trails for all transactions. The system complies with aviation industry security standards and maintains detailed logs of all user activities.'
+    },
+    {
+      question: 'How does pricing work?',
+      answer: 'Pricing is based on user roles, transaction volume, and specific feature requirements. The system offers different permission levels for various departments (RFQ-Quote management, Parts management, Client management, Finance, Statistics). Contact our sales team for a customized quote based on your aviation business needs.'
+    },
+    {
+      question: 'How do I get technical support?',
+      answer: 'Technical support is available through the built-in Support Center within the platform, with separate channels for Software and Trade departments. You can create support tickets directly in the system, and our technical team provides assistance for system configuration, user training, and integration support.'
+    },
+    {
+      question: 'What do I need to do to request a demo?',
+      answer: 'To request a demo of the Aviation Supply Management Tool, contact our team through the platform or reach out directly. Our specialists will demonstrate the RFQ workflow, parts management, supplier relations, PI/PO processing, and logistics tracking features specific to aviation parts procurement and supply chain management.'
+    }
+  ]
+},
   footer: {
     rights: '2025 FLY AI | All rights reserved',
     contactTitle: 'Contact Us',

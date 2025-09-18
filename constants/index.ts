@@ -89,8 +89,8 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: 'Sosyal',
   links: [
-    '/linkedin.svg',
     'nextsosyal.svg',
+    '/linkedin.svg',
     // '/instagram.svg',
     // '/twitter.svg',
     // '/youtube.svg',

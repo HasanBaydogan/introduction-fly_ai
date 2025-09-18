@@ -104,13 +104,13 @@ const Navbar = () => {
         </div>
       </div>
 
-      <Button 
+      {/* <Button 
           type="button"
           title={t.nav.demo}
           icon="/user.svg"
           variant="btn_dark_green"
           href={generateDemoRequestMailto(t.demoRequest.subject, t.demoRequest.body)}
-        />
+        /> */}
       </div>
 
       <img 
@@ -147,7 +147,7 @@ const Navbar = () => {
             </div>
             <div className="mt-auto pt-6">
               <div className="space-y-2">
-                <button 
+                {/* <button 
                   className="w-full px-6 py-3 regular-14 rounded-full bg-blue-500 text-white hover:bg-blue-600 transition-colors flex items-center justify-center gap-2" 
                   onClick={() => { 
                     setMobileOpen(false); 
@@ -156,7 +156,7 @@ const Navbar = () => {
                 >
                   <img src="/user.svg" alt="demo" width={16} height={16} />
                   {t.nav.demo}
-                </button>
+                </button> */}
                 <button 
                   className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors" 
                   // onClick={() => { setMobileOpen(false); router.push('/login/user'); }}

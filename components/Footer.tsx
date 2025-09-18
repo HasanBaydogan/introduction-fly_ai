@@ -31,17 +31,17 @@ const Footer = () => {
                           return '#akis';
                         case 'privacy policy':
                         case 'gizlilik politikası':
-                          return '/privacy-policy';
+                          // return '/privacy-policy';
                         case 'terms of use':
                         case 'kullanım şartları':
-                          return '/terms-of-use';
+                          // return '/terms-of-use';
                         case 'faq':
                         case 'sss':
                           return '#sss';
                         case 'blog':
-                          return '/blog';
+                          // return '/blog';
                         case 'api v1':
-                          return '/api-docs';
+                          // return '/api-docs';
                         case 'sürüm notları':
                         case 'release notes':
                           return '/release-notes';
@@ -70,7 +70,7 @@ const Footer = () => {
                     <p className="whitespace-nowrap">
                       {link.label}:
                     </p>
-                    <p className="medium-14 whitespace-nowrap text-blue-70">
+                    <p className=" whitespace-nowrap text-blue-70">
                       {link.value}
                     </p>
                   </div>   
