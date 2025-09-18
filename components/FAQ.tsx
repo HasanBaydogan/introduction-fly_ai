@@ -28,7 +28,7 @@ const FAQ = () => {
               />
             </svg> 
           </div> */}
-          <p className="uppercase regular-18 -mt-1 mb-3 text-blue-500">{t.faq.kicker}</p>
+          {/* <p className="uppercase regular-18 -mt-1 mb-3 text-blue-500">{t.faq.kicker}</p> */}
           <h2 className="bold-40 lg:bold-64 mb-4">{t.faq.heading}</h2>
           <p className="regular-16 text-gray-30 max-w-2xl">{t.faq.subtitle}</p>
         </div>
