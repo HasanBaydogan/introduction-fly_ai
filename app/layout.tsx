@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     'FLY AI', 'Operasyon Yönetimi', 'RFQ', 'PI', 'Proforma Fatura', 'Ödeme', 'Transit', 'Gümrük', 'Teslimat', 'Destek Merkezi', 'Chat', 'Supply Chain', 'İthalat', 'İhracat', 'Tedarik', 'B2B'
   ],
   icons: {
-    icon: '/flyai_logo.png',
-    shortcut: '/flyai_logo.png',
-    apple: '/flyai_logo.png',
+    icon: '/FLY_AI_logo_new2.png',
+    shortcut: '/FLY_AI_logo_new2.png',
+    apple: '/FLY_AI_logo_new2.png',
   },
   openGraph: {
     title: 'FLY AI – Akıllı Tedarik ve Ticaret Operasyon Yönetimi',

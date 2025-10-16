@@ -87,7 +87,7 @@ const Footer = () => {
                       if (iconPath.includes('linkedin')) {
                         return 'https://linkedin.com/company/flyai';
                       } else if (iconPath.includes('nextsosyal')) {
-                        return 'https://nextsosyal.com';
+                        return 'https://sosyal.teknofest.app/@flyai_tr';
                       } else if (iconPath.includes('instagram')) {
                         return 'https://instagram.com/flyai';
                       } else if (iconPath.includes('twitter')) {
