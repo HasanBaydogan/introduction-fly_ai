@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
 // ...existing code...
 
 const GetApp = () => {
@@ -10,14 +10,8 @@ const GetApp = () => {
           <h2 className="bold-40 lg:bold-64 xl:max-w-[320px]">Get for free now!</h2>
           <p className="regular-16 text-gray-10">Available on iOS and Android</p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row">
-            <Button 
-              type="button"
-              title="App Store"
-              icon="/apple.svg"
-              variant="btn_white"
-              full
-            />
-            <Button 
+            <Button type="button" title="App Store" icon="/apple.svg" variant="btn_white" full />
+            <Button
               type="button"
               title="Play Store"
               icon="/android.svg"
@@ -28,11 +22,18 @@ const GetApp = () => {
         </div>
 
         <div className="flex flex-1 items-center justify-center md:justify-end">
-          <img src="/phones.png" alt="phones" width={550} height={870} className="w-2/3 max-w-[420px] md:w-[480px] lg:w-[550px] h-auto" style={{ height: 'auto' }} />
+          <img
+            src="/phones.png"
+            alt="phones"
+            width={550}
+            height={870}
+            className="w-2/3 max-w-[420px] md:w-[480px] lg:w-[550px] h-auto"
+            style={{ height: "auto" }}
+          />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default GetApp
+export default GetApp;

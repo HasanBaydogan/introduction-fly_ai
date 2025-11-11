@@ -6,7 +6,7 @@ import { useLanguage } from "./LanguageProvider";
 const Features = () => {
   const { t } = useLanguage();
   return (
-    <section className="relative max-container padding-container flex flex-col gap-12 py-10 pb-20 md:gap-16 lg:py-25 xl:flex-row">
+    <section className=" relative max-container padding-container flex flex-col gap-12 py-10 pb-20 md:gap-16 lg:py-25 xl:flex-row">
       <div className="hero-map" />
       <div className="z-20 flex w-full flex-col lg:w-[60%] pt-60 sm:pt-0">
         <div className="relative">

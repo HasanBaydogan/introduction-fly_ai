@@ -218,9 +218,8 @@ Teşekkürler,
     columns: [
       {
         title: "FLY AI",
-        links: ["Hakkımızda", "Teknik Dokümantasyon", "Gizlilik Politikası", "Kullanım Şartları"],
+        links: ["Hakkımızda", "SSS"],
       },
-      { title: "Kaynaklar", links: ["SSS"] },
     ],
   },
 } as const;
