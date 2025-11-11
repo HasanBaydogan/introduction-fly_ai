@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block mb-1 font-medium">
-              {t.contact.name} {t.contact.surname}
+              {t.contact.name} {t.contact.surname} *
             </label>
             <input
               className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
@@ -63,7 +63,7 @@ const Contact = () => {
             {errors.name && <span className="text-red-500 text-sm">{errors.name.message}</span>}
           </div>
           <div>
-            <label className="block mb-1 font-medium">{t.contact.email}</label>
+            <label className="block mb-1 font-medium">{t.contact.email} *</label>
             <input
               className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                 errors.email ? "border-red-500" : "border-gray-300"
@@ -81,7 +81,7 @@ const Contact = () => {
             {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
           </div>
           <div>
-            <label className="block mb-1 font-medium">{t.contact.subject}</label>
+            <label className="block mb-1 font-medium">{t.contact.subject} *</label>
             <input
               className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                 errors.subject ? "border-red-500" : "border-gray-300"
@@ -95,7 +95,7 @@ const Contact = () => {
             )}
           </div>
           <div>
-            <label className="block mb-1 font-medium">{t.contact.phone}</label>
+            <label className="block mb-1 font-medium">{t.contact.phone} *</label>
             <input
               className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                 errors.phone ? "border-red-500" : "border-gray-300"
@@ -114,7 +114,7 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <label className="block mb-1 font-medium">{t.contact.message}</label>
+          <label className="block mb-1 font-medium">{t.contact.message} *</label>
           <textarea
             className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
               errors.message ? "border-red-500" : "border-gray-300"

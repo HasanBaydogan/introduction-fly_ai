@@ -43,7 +43,7 @@ const Footer = () => {
                 </ul>
 
                 <a
-                  href="/demo"
+                  href="#iletisim"
                   className="inline-flex items-center gap-2 rounded-full border border-indigo-300 px-5 py-2.5 text-indigo-700 font-semibold
              hover:bg-indigo-50 hover:border-indigo-400 transition shadow-sm -ml-4"
                 >
