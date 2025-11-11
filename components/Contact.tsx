@@ -6,6 +6,8 @@ import { useLanguage } from "./LanguageProvider";
 interface ContactFormInputs {
   name: string;
   email: string;
+  subject: string;
+  phone: string;
   message: string;
 }
 
@@ -20,9 +22,10 @@ const Contact = () => {
   const { t } = useLanguage();
   const onSubmit = async (data: ContactFormInputs) => {
     setServerError("");
-    // Simulate API call
+
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
+      console.log(data);
       reset();
     } catch (e) {
       setServerError("Bir hata oluştu. Lütfen tekrar deneyin.");
@@ -30,40 +33,74 @@ const Contact = () => {
   };
 
   return (
-      <div id="iletisim" className="max-container mx-auto p-8 bg-white rounded-xl shadow-md mt-10">
+    <div id="iletisim" className="max-container mx-auto p-8 bg-white rounded-xl shadow-md mt-10">
       <h2 className="text-2xl font-bold mb-6 text-center">{t.contact.contact}</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-        <div>
-          <label className="block mb-1 font-medium">
-            {t.contact.name} {t.contact.surname}
-          </label>
-          <input
-            className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-              errors.name ? "border-red-500" : "border-gray-300"
-            }`}
-            {...register("name", { required: `${t.contact.nameRequired}` })}
-            placeholder={t.contact.namePlaceholder}
-            disabled={isSubmitting}
-          />
-          {errors.name && <span className="text-red-500 text-sm">{errors.name.message}</span>}
-        </div>
-        <div>
-          <label className="block mb-1 font-medium">{t.contact.email}</label>
-          <input
-            className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-              errors.email ? "border-red-500" : "border-gray-300"
-            }`}
-            {...register("email", {
-              required: `${t.contact.emailRequired}`,
-              pattern: {
-                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                message: `${t.contact.emailErrorMessage}`,
-              },
-            })}
-            placeholder={t.contact.email}
-            disabled={isSubmitting}
-          />
-          {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label className="block mb-1 font-medium">
+              {t.contact.name} {t.contact.surname}
+            </label>
+            <input
+              className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                errors.name ? "border-red-500" : "border-gray-300"
+              }`}
+              {...register("name", { required: `${t.contact.nameRequired}` })}
+              placeholder={t.contact.namePlaceholder}
+              disabled={isSubmitting}
+            />
+            {errors.name && <span className="text-red-500 text-sm">{errors.name.message}</span>}
+          </div>
+          <div>
+            <label className="block mb-1 font-medium">{t.contact.email}</label>
+            <input
+              className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                errors.email ? "border-red-500" : "border-gray-300"
+              }`}
+              {...register("email", {
+                required: `${t.contact.emailRequired}`,
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: `${t.contact.emailErrorMessage}`,
+                },
+              })}
+              placeholder={t.contact.email}
+              disabled={isSubmitting}
+            />
+            {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
+          </div>
+          <div>
+            <label className="block mb-1 font-medium">{t.contact.subject}</label>
+            <input
+              className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                errors.subject ? "border-red-500" : "border-gray-300"
+              }`}
+              {...register("subject", { required: `${t.contact.subjectRequired}` })}
+              placeholder={t.contact.subjectPlaceholder}
+              disabled={isSubmitting}
+            />
+            {errors.subject && (
+              <span className="text-red-500 text-sm">{errors.subject.message}</span>
+            )}
+          </div>
+          <div>
+            <label className="block mb-1 font-medium">{t.contact.phone}</label>
+            <input
+              className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                errors.phone ? "border-red-500" : "border-gray-300"
+              }`}
+              {...register("phone", {
+                required: `${t.contact.phoneRequired}`,
+                pattern: {
+                  value: /^\+?[0-9\s-]{7,15}$/,
+                  message: `${t.contact.phoneErrorMessage}`,
+                },
+              })}
+              placeholder={t.contact.phonePlaceholder}
+              disabled={isSubmitting}
+            />
+            {errors.phone && <span className="text-red-500 text-sm">{errors.phone.message}</span>}
+          </div>
         </div>
         <div>
           <label className="block mb-1 font-medium">{t.contact.message}</label>
@@ -80,7 +117,15 @@ const Contact = () => {
         </div>
         {serverError && <div className="text-red-600 text-center">{serverError}</div>}
         {isSubmitSuccessful && !serverError && (
-          <div className="text-green-600 text-center">Mesajınız başarıyla gönderildi!</div>
+          <div className="text-green-600 text-center" key={isSubmitSuccessful ? "success" : ""}>
+            {t.contact.messageSuccess}
+            {(() => {
+              setTimeout(() => {
+                reset();
+              }, 5000);
+              return null;
+            })()}
+          </div>
         )}
         <button
           type="submit"
