@@ -2,6 +2,7 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useLanguage } from "./LanguageProvider";
+import axios from "axios";
 
 interface ContactFormInputs {
   name: string;
@@ -24,17 +25,27 @@ const Contact = () => {
     setServerError("");
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log(data);
+      const response = await axios.post("https://formspree.io/f/xnnlqzbp", data, {
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      if (response.status === 200) {
+        console.log("Form submitted successfully");
+      }
       reset();
     } catch (e) {
       setServerError("Bir hata oluştu. Lütfen tekrar deneyin.");
+      console.error("Error submitting form:", e);
     }
   };
 
   return (
-    <div id="iletisim" className="max-container mx-auto p-8 bg-white rounded-xl shadow-md mt-10">
-      <h2 className="text-2xl font-bold mb-6 text-center">{t.contact.contact}</h2>
+    <div
+      id="iletisim"
+      className="relative max-container padding-container mx-auto p-8 rounded-xl mt-12 gap-12 pb-20 md:gap-16 py-10 lg:py-20"
+    >
+      <h2 className="bold-40 lg:bold-64 pt-20">{t.contact.contact}</h2>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
