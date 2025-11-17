@@ -1,9 +1,11 @@
 "use client";
 import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
+import Button from "./Button";
 import { useLanguage } from "./LanguageProvider";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import { generateDemoRequestMailto } from "@/utils/mailto";
 
 const Navbar = () => {
   const { lang, setLang, t } = useLanguage();
@@ -40,36 +42,38 @@ const Navbar = () => {
   useEffect(() => {
     return () => clearCloseTimer();
   }, []);
+
   return (
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md">
-      <nav className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8 h-16 flex items-center justify-between">
+    // 🔹 Sadece desktop'ta sticky
+    <header className="w-full lg:sticky lg:top-0 lg:z-40 lg:bg-white/70 lg:backdrop-blur-md">
+      <nav className="flexBetween max-container padding-container relative z-30 py-5">
         <Link href="/">
-          <img src="/FLY_AI_logo_new.png" alt="FLY AI" className="h-14 w-auto" />
+          <img src="/FLY_AI_logo_new.png" alt="FLY AI" width={150} height={29} />
         </Link>
 
-        <ul className="hidden md:flex items-center gap-8 text-sm text-slate-700">
+        <ul className="hidden h-full gap-12 lg:flex pt-7">
           {NAV_LINKS.map((link) => (
             <Link
               href={link.href}
               key={link.key}
-              className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-slate-900"
+              className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
             >
               {t.nav[link.key as "home" | "features" | "flow" | "faq" | "contact"] ?? link.label}
             </Link>
           ))}
         </ul>
 
-        <div className="flex items-center gap-4">
-          <div className="hidden sm:flex items-center text-sm text-slate-500">
+        <div className="lg:flexCenter hidden pt-7">
+          <div className="hidden lg:flex items-center gap-2 p-4">
             <button
-              className={`regular-14 ${lang === "en" ? "font-bold text-slate-900" : ""}`}
+              className={`regular-14 ${lang === "en" ? "font-bold" : ""}`}
               onClick={() => setLang("en")}
             >
               EN
             </button>
-            <span className="text-slate-500 mx-2">/</span>
+            <span className="text-gray-30">/</span>
             <button
-              className={`regular-14 ${lang === "tr" ? "font-bold text-slate-900" : ""}`}
+              className={`regular-14 ${lang === "tr" ? "font-bold" : ""}`}
               onClick={() => setLang("tr")}
             >
               TR
@@ -78,13 +82,13 @@ const Navbar = () => {
 
           {/* Login morphing area */}
           <div
-            className="relative"
+            className="relative mr-3"
             ref={morphRef}
             onMouseEnter={clearCloseTimer}
             onMouseLeave={scheduleClose}
           >
             <div
-              className={`flex items-center overflow-hidden rounded-full border border-blue-600/40 bg-blue-500 text-white shadow-md transition-all duration-500 ease-out`}
+              className="flex items-center overflow-hidden rounded-full border border-blue-600/40 bg-blue-500 text-white shadow-md transition-all duration-500 ease-out"
               style={{ width: open ? 260 : 120 }}
             >
               {!open ? (
@@ -96,11 +100,23 @@ const Navbar = () => {
                 </button>
               ) : (
                 <div className="flex w-full items-stretch">
-                  <button className="flex-1 px-5 py-3 regular-14 hover:bg-white/10 transition-colors">
+                  <button
+                    className="flex-1 px-5 py-3 regular-14 hover:bg-white/10 transition-colors"
+                    onClick={() => {
+                      setOpen(false);
+                      router.push("https://fly.iztal.tr");
+                    }}
+                  >
                     {t.nav.user}
                   </button>
                   <div className="w-px self-center h-5 bg-white/30" />
-                  <button className="flex-1 px-5 py-3 regular-14 hover:bg-white/10 transition-colors">
+                  <button
+                    className="flex-1 px-5 py-3 regular-14 hover:bg-white/10 transition-colors"
+                    onClick={() => {
+                      setOpen(false);
+                      router.push("https://fly-ai-client-frontend-zm3i.vercel.app/");
+                    }}
+                  >
                     {t.nav.client}
                   </button>
                 </div>
@@ -161,11 +177,20 @@ const Navbar = () => {
                 <div className="space-y-2">
                   <button
                     className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors"
-                    // onClick={() => { setMobileOpen(false); router.push('/login/user'); }}
+                    onClick={() => {
+                      setMobileOpen(false);
+                      router.push("https://fly.iztal.tr");
+                    }}
                   >
                     {t.nav.user} {t.nav.login}
                   </button>
-                  <button className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors">
+                  <button
+                    className="w-full px-6 py-3 regular-14 rounded-full border border-blue-500 text-blue-500 hover:bg-blue-50 transition-colors"
+                    onClick={() => {
+                      setOpen(false);
+                      router.push("https://fly-ai-client-frontend-zm3i.vercel.app/");
+                    }}
+                  >
                     {t.nav.client} {t.nav.login}
                   </button>
                 </div>
